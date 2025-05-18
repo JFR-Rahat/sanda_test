@@ -3,10 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=portrait">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <title>Sanda Run</title>
     <style>
+        @media screen and (orientation: landscape) {
+            html {
+                transform: rotate(-90deg);
+                transform-origin: left top;
+                width: 100vh;
+                height: 100vw;
+                overflow-x: hidden;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -267,7 +280,7 @@
         </div>
 
         <div class="footer-credits">
-            All rights reserved ©️ by DataSapience Lab | Music credit: <a
+            All rights reserved ©️ by "Sanda" | Music credit: <a
                 href="https://www.youtube.com/watch?v=fAG0RJYy6ws" target="_blank">YouTube Channel</a>
         </div>
 
